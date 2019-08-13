@@ -1,0 +1,428 @@
+/*
+
+ */
+
+
+/* ==========================================================================
+   Base Styles and Bootstrap Modifications
+   ========================================================================== */
+
+
+
+@media screen and (min-width: 1200px) {
+  .chess-telegram {
+     padding-top: 100px;
+  }
+}
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+    height: 100%;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #f2c2c9;
+    color: #a4003a;
+    text-shadow: none;
+}
+
+::selection {
+    background: #16a085;
+    color: #a4003a;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+ hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+.two-bears {
+  text-align: center;
+}
+li {
+  margin: 0 0 30px 0;
+}
+.album-release h3{
+  padding: -10px 0px 0px 0px;
+  color: #F3905D;
+}
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+ img {
+    vertical-align: middle;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+ textarea {
+    resize: vertical;
+}
+
+
+/* ==========================================================================
+   General styles
+   ========================================================================== */
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: "Montserrat";
+    font-weight: 300;
+    font-size: 16px;
+    color: #555;
+
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+}
+
+.col-md-4 {
+	padding-bottom: 20px;
+}
+
+.row {
+margin-right: 0px;
+margin-left: -15px;
+}
+
+.modal-header {
+	background: #3498db;
+}
+
+.modal-header h4 {
+	color: white;
+}
+
+.modal-footer {
+	background: #2b2b2b;
+}
+
+/* NAVBAR */
+/*changes background color of navbar*/
+.navbar-inverse {
+border-color: transparent;
+background-color: white;
+}
+
+/*changes navbar text color*/
+.navbar-nav {
+  color: #555 !important;
+}
+
+/*changes navbar link text color*/
+.navbar-nav a{
+  color: #555 !important;
+}
+
+/*changes background color of active link*/
+.navbar-inverse .navbar-nav > .active > a {
+  background-color: #F3905D !important;
+  color: white !important;
+}
+
+.navbar-toggle {
+border-color: transparent;
+border: 0px solid transparent;
+}
+
+/*Makes background of right side drop down menu clear when hover and focused*/
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:focus {
+  background-color: transparent;;
+}
+
+/*changes background color and text color of hovered or focused link*/
+/*.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+	background-color: #5CACC4;
+	color: white;
+}*/
+
+/*change padding on navbar icon so it is centered*/
+.navbar-brand {
+  padding: 12px 12px;
+}
+
+/* PRODUCT BUTTONS */
+.btn {
+  background-color: #F3905D;
+  color: white;
+  border-color: transparent;
+}
+
+.btn-success:hover,
+.btn-success:focus,
+.btn-success:active {
+  background-color: #F3905D;
+  color: white;
+  border-color: transparent;
+}
+
+hr {
+    position: relative;
+    border: none;
+}
+
+hr:before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 25%;
+    width: 50%;
+    height: 2px;
+    background: #ccc;
+}
+
+a img {
+    background: white;
+}
+
+.odd a img {
+    background: #f5f5f5;
+}
+
+/* Titles */
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Montserrat";
+    font-weight: 300;
+    color: #333;
+}
+
+
+/* Paragraph & Typographic */
+p {
+    line-height: 28px;
+    margin-bottom: 25px;
+}
+
+.centered {
+    text-align: center;
+}
+
+.paragraph-lead {
+    font-size: 20px;
+    color: #3498db;
+}
+
+strong {
+    font-weight: 700;
+}
+
+em {
+    font-weight: 300;
+}
+
+pre {
+    background: #ebebeb;
+    border: none;
+    font-family: "Montserrat";
+    font-size: 16px;
+    color: #666;
+    padding: 20px;
+    line-height: 28px;
+}
+
+small {
+    font-size: 12px;
+}
+
+blockquote,
+blockquote p {
+    line-height: 28px;
+    color: #999;
+    font-weight: 300;
+    font-style: italic;
+}
+
+blockquote {
+    position: relative;
+    margin: 0 0 40px -30px;
+    padding-left: 30px;
+    border-left: 5px solid #3498db;
+}
+
+blockquote cite {
+    position: absolute;
+    bottom: -25px;
+    right: 0;
+    font-size: 12px;
+    font-style: italic;
+    color: #333;
+    font-weight: 300;
+}
+
+blockquote cite:before {
+    content: "-- "
+}
+
+/* Images */
+.overflow-image {
+    margin-top: -65px;
+}
+
+/* Links */
+a {
+    color: #3498db;
+    word-wrap: break-word;
+
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+a:hover,
+a:focus {
+    color: #c0392b;
+    text-decoration: none;
+    outline: 0;
+}
+
+a:before,
+a:after {
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+
+
+/* ==========================================================================
+   Wrap Sections
+   ========================================================================== */
+.logo-hyper {
+  text-align: center;
+  font-family: 'Montserrat';
+  font-size: 32px;
+  padding: 20px 0px 20px 0px;
+}
+
+#headerwrap {
+
+	margin-top: -70px;
+	padding-top:120px;
+	text-align:center;
+	min-height: 500px;
+  max-height: 500px;
+}
+
+#headerwrap h1 {
+	color:#ffffff;
+  font-family: 'Montserrat';
+	margin-top: 110px;
+	padding-bottom: 20px;
+	letter-spacing: 8px;
+	font-size: 40px;
+	font-weight: bold;
+	text-shadow: 2px 2px 2px #000;
+}
+
+#headerwrap h2 {
+	color:#ffffff;
+  font-family: 'Montserrat', cursive;
+	margin-top: 20px;
+	padding-bottom: 20px;
+	letter-spacing: 8px;
+	font-size: 40px;
+	font-weight: bold;
+	text-shadow: 2px 2px 2px #000;
+}
+
+#headerwrap p {
+	color:#ffffff;
+  font-family: 'Montserrat', cursive;
+  font-size: 20px;
+	font-weight: 500;
+	text-align: center;
+	line-height: 20px;
+	letter-spacing: 3px;
+	margin-left: 15px;
+	text-shadow: 1px 1px 1px #000;
+}
+
+#chess-telegram {
+  background-color: #98bed8
+}
+
+#fancy-forest {
+  background-color: #B6E5E7
+}
+
+#contact {
+	/* background: #2b2b2b; */
+	margin-top: 0px;
+	padding-top: 150px;
+	padding-bottom: 20px;
+	text-align: center;
+}
+
+#contact h1 {
+	color: #F3905D;
+}
+
+#contact p {
+	color: white;
+}
+
+/* ==========================================================================
+   Section Classes
+   ========================================================================== */
+
+/* Product Section */
+.product-section {
+  background: #2b2b2b;
+  margin-top: 0px;
+  padding-top: 40px;
+  /*border-bottom: 1px solid #ddd;*/
+  text-align: center;
+}
+
+.product-section .callout {
+	margin-bottom: 20px;
+}
+
+.product-section p {
+	margin-left: 30px;
+	margin-right: 30px;
+	letter-spacing: 1px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.product-section .icon {
+	font-size: 60px;
+	line-height: 30px;
+	margin-bottom: 10px;
+}
