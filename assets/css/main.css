@@ -107,7 +107,10 @@ html,
 body {
 
 }
-
+.audio-card-img {
+  max-width: 400px;
+  max-height: 600px;
+}
 .four-thousand-controls {
   /* text-align: center; */
   /* width: 100%; */
@@ -152,13 +155,16 @@ border-color: transparent;
 background-color: white;
 }
 
+.song-title-name {
+  padding: 15px 0px 15px 0px;
+}
 /*changes navbar text color*/
 .navbar-nav {
   color: #555 !important;
 }
 
 .audio-card {
-
+  border: 0px;
 }
 
 /*changes navbar link text color*/
