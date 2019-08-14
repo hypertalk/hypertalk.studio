@@ -152,7 +152,7 @@ background-color: white;
 }
 
 .audio-card {
-  
+
 }
 
 /*changes navbar link text color*/
@@ -351,8 +351,8 @@ a:after {
 	/* /* margin-top: -70px; */
 	/* padding-top:120px; */
 	/* text-align:center; */
-	min-height: 500px;
-  max-height: 500px; */
+	min-height: 300px;
+  max-height: 300px; 
 }
 
 #headerwrap h1 {
