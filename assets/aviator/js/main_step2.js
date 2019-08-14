@@ -540,6 +540,7 @@ function loop(){
 //   TweenMax.to(scene, 2, { background: ColorPallet.red });
 
 }
+
 function colorTo(target, value) {
   var target = scene.getObjectByName(target);
   var initial = new THREE.Color(target.material.color.getHex());
@@ -591,8 +592,34 @@ function normalize(v,vmin,vmax,tmin, tmax){
   return tv;
 }
 
+function handleOrientation(event) {
+  var x = event.beta;  // In degree in the range [-180,180]
+  var y = event.gamma; // In degree in the range [-90,90]
+  // var maxX = document.querySelector('.audio-card').clientWidth  - ball.clientWidth;
+  // var maxY = garden.clientHeight - ball.clientHeight;
+  // output.innerHTML  = "beta : " + x + "\n";
+  // output.innerHTML += "gamma: " + y + "\n";
+
+  // Because we don't want to have the device upside down
+  // We constrain the x value to the range [-90,90]
+  if (x >  90) { x =  90};
+  if (x < -90) { x = -90};
+
+  // To make computation easier we shift the range of 
+  // x and y to [0,180]
+  x += 90;
+  y += 90;
+
+  mousePos.x = (x/180 - 10)
+  mousePos.y = (7/180 - 10)
+
+  // 10 is half the size of the ball
+  // It center the positioning point to the center of the ball
+}
+
 function init(event){
   document.addEventListener('mousemove', handleMouseMove, false);
+  document.addEventListener("deviceorientation", handleOrientation, true);
   //document.addEventListener('mousewheel', handleMouseWheel, false);
 //  document.addEventListener('DOMMouseScroll', handleMouseWheel, false);
   createScene();
