@@ -418,10 +418,10 @@ a:after {
   background-color: #B6E5E7
 }
 .info-footer {
-  border-style: solid;
+  /* border-style: solid; */
   text-align: center;
-  border-width: 1px;
-  border-color: #398aaf;
+  /* border-width: 1px; */
+  /* border-color: #398aaf; */
   padding: 20px 20px 20px 20px;
 }
 #contact {
