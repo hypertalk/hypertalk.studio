@@ -421,6 +421,9 @@ a:after {
 #fancy-forest {
   background-color: #B6E5E7
 }
+.album-release {
+  padding: 20px 0px 0px 0px;
+}
 .info-footer {
   /* border-style: solid; */
   text-align: center;
