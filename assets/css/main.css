@@ -34,6 +34,7 @@ body {
     font-size: 1em;
     line-height: 1.4;
     height: 100%;
+    text-align: center;
 }
 
 /*
@@ -402,15 +403,27 @@ a:after {
 	margin-left: 15px;
 	text-shadow: 1px 1px 1px #000;
 }
-
+.at-subtitle {
+  padding: 0px 100px 0px 0px;
+}
 #chess-telegram {
   background-color: #98bed8
 }
-
+.at-flexbox {
+  /* max-width: 700px;
+  width: 400px; */
+  text-align: center;
+}
 #fancy-forest {
   background-color: #B6E5E7
 }
-
+.info-footer {
+  border-style: solid;
+  text-align: center;
+  border-width: 1px;
+  border-color: #398aaf;
+  padding: 20px 20px 20px 20px;
+}
 #contact {
 	/* background: #2b2b2b; */
 	margin-top: 0px;
