@@ -413,6 +413,10 @@ a:after {
 #chess-telegram {
   background-color: #98bed8
 }
+.card {
+  border: 0px;
+}
+
 .at-flexbox {
   /* max-width: 700px;
   width: 400px; */
