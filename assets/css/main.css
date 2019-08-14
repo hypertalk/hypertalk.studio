@@ -111,6 +111,7 @@ body {
 .audio-card-img {
   max-width: 400px;
   max-height: 600px;
+  
 }
 .four-thousand-controls {
   /* text-align: center; */
@@ -165,9 +166,12 @@ background-color: white;
 }
 
 .audio-card {
-  border: 0px;
-
+  border-style: solid;
   text-align: center;
+  border-width: 1px;
+  border-color: #63bfe9;
+  padding: 20px 20px 20px 20px;
+
 }
 
 /*changes navbar link text color*/
