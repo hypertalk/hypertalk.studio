@@ -1,13 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
 
 <head>
     <meta charset="utf-8">
+    <meta content="text/html; charset=UTF-8" name="Content-Type" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="hypertalk">
     <meta name="author" content="hypertalk">
-    <!-- <link rel="shortcut icon" href="../assets/ico/favicon.png"> -->
+    <meta name="twitter:card" content="player" />
+    <meta name="twitter:site" content="@talkhyper" />
+    <meta name="twitter:url" content="https://hyptertalk.studio/" />
+    <meta name="twitter:title" content="hypertalk - four thousand" />
+    <meta name="twitter:description" content="08.13.19" />
+    <meta name="twitter:player" content="https://hypertalk.studio/assets/fm5200/four-thousand-081419-clean.mp3" />
+    <meta property="twitter:player:width" content="400" />
+    <meta property="twitter:player:height" content="400" />
+    <meta name="twitter:image" content="https://hypertalk.studio/assets/img/tower.jpg" />
+    <meta name="twitter:image:alt" content="four thousand" />
 
+    <!-- <meta name="twitter:card" content="summary"> -->
+    <!-- <meta name=”twitter:site” content="@talkhyper"/>  -->
+    <!-- <meta name="twitter:creator" content="@talkhyper" /> -->
+    <!-- <meta name=”twitter:title” content="four"/>  -->
+    <!-- <meta name=”twitter:description” content="description" />  -->
+    <!-- <meta name=”twitter:image” content=”https://hyptertalk.studio/assets/twitter.card.png” /> -->
+        <!-- <link rel="shortcut icon" href="assets/ico/favicon.png"> -->
+<!-- 
+        <meta name=”twitter:card” content=”app”>
+        <meta name=”twitter:site” content=”@yourwebsite”>
+        <meta name=”twitter:description” content=”your description”>
+        <meta name=”twitter:app:country” content=”your country like US”>
+        <meta name=”twitter:app:name:iphone” content=”your iphone app name”>
+        <meta name=”twitter:app:id:iphone” content=”your iphone app ID”>
+        <meta name=”twitter:app:url:iphone” content=”your iphone app URL”>
+        <meta name=”twitter:app:name:ipad” content=”your ipad app name”>
+        <meta name=”twitter:app:id:ipad” content=”your ipad app ID”>
+        <meta name=”twitter:app:url:ipad” content=”your ipad app URL”>
+        <meta name=”twitter:app:name:googleplay” content=”your googleplay app name”>
+        <meta name=”twitter:app:id:googleplay” content=”your googleplay app ID”> -->
+    <!-- Make sure 32x32 is loaded last, bc firefox will load the last image -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -18,21 +48,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
-
     <!-- Custom styles for this template -->
-    <link href="../assets/css/main.css" rel="stylesheet">
-    <link rel="stylesheet" href="../assets/css/icomoon.css">
-    <link href="../assets/css/animate-custom.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/icomoon.css">
+    <link href="assets/css/animate-custom.css" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
@@ -40,10 +59,26 @@
         type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
 
+    <script type="text/javascript" src="assets/aviator/js/three.min.js"></script>
+    <script type="text/javascript" src="assets/aviator/js/TweenMax.min.js"></script>
+    <script type="text/javascript" src="assets/aviator/js/main_step2.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145662909-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-145662909-1');
+    </script>
 
 </head>
 
-
+<!-- Image and text -->
 <body data-spy="scroll" data-offset="0" data-target="#navbar-main">
     <!-- Image and text -->
     <nav class="navbar navbar-light bg-light">
@@ -54,73 +89,86 @@
 
     </nav>
 
-    <div class="at-flexbox at-subheader">
-        <div class="d-flex flex-row-reverse bd-highlight">
-            <div class="p-2 bd-highlight">
-                <div class="at-subtitle">
+    <!-- ==== CONTACT ==== -->
+    <div id="contact">
+        <div class="container">
+            
+            <p></p>
+            
+            <div class="card audio-card">
+                <!-- <img class="card-img-top" src="assets/img/four-thousand-data.jpg" alt="four thousand" width="400"
+                    height="400"> -->
+                <!-- ==== HEADERWRAP ==== -->
+                
+                <div id="headerwrap" name="home" >
 
                 </div>
-            </div>
-        </div>
-    </div>
 
-    <div class="at-flexbox at-media-card">
-        <div class="d-flex flex-column bd-highlight mb-3 justify-content-center">
                 <div class="p-2 bd-highlight">
 
 
-                        <div class="card">
-                            <div class='song-title-name'>
-                                <img class="card-img-top audio-card-img" src="../assets/img/tower.jpg"
-                                    alt="four thousand" width="500">
-        
-                            </div>
-        
-                            <div class='song-title-name'>
-                                two-bears-full.mp3
-                            </div>
-                            <!-- ==== HEADERWRAP ==== -->
-                            <div class='four-thousand-controls'>
-                                <audio controls autoplay>
-                                    <source src="../assets/two-bears/two-bears-theme-1176_fairchild_660-16db-take_4-full.mp3"
-                                        type="audio/mp3">
-                                    <source src="../assets/two-bears/two-bears-theme-1176_fairchild_660-16db-take_4-full.ogg"
-                                        type="audio/ogg">
-                                    <!-- fallback for non supporting browsers goes here -->
-                                    <p>Your browser does not support HTML5 audio, but you can still
-                                        <a href="../assets/two-bears/two-bears-theme-1176_fairchild_660-16db-take_4-full.mp3"
-                                            download>download</a>
-                                </audio>
-                            </div>
-        
-                        </div>
-
+                    <div class="card">
                         <div class='song-title-name'>
-                                two-bears-extended.mp3
-                            </div>
-                            <!-- ==== HEADERWRAP ==== -->
-                            <div class='four-thousand-controls'>
-                                <audio controls>
-                                    <source src="../assets/two-bears/two-bears-theme-1176_fairchild_660-16db-take_4.mp3"
-                                        type="audio/mp3">
-                                    <source src="../assets/two-bears/two-bears-theme-1176_fairchild_660-16db-take_4.ogg"
-                                        type="audio/ogg">
-                                    <!-- fallback for non supporting browsers goes here -->
-                                    <p>Your browser does not support HTML5 audio, but you can still
-                                        <a href="../assets/two-bears/two-bears-theme-1176_fairchild_660-16db-take_4.ogg"
-                                            download>download</a>
-                                </audio>
-                            </div>
-        
-        
+                            <img class="card-img-top audio-card-img" src="../assets/img/tower.jpg"
+                                alt="four thousand" width="500">
+    
+                        </div>
+    
+                        <div class='song-title-name'>
+                            two-bears-full.mp3
+                        </div>
+                        <!-- ==== HEADERWRAP ==== -->
+                        <div class='four-thousand-controls'>
+                            <audio controls autoplay>
+                                <source src="../assets/two-bears/two-bears-theme-take_4-full.mp3"
+                                    type="audio/mp3">
+                                <source src="../assets/two-bears/two-bears-theme-take_4-full.ogg"
+                                    type="audio/ogg">
+                                <!-- fallback for non supporting browsers goes here -->
+                                <p>Your browser does not support HTML5 audio, but you can still
+                                    <a href="../assets/two-bears/two-bears-theme-take_4-full.mp3"
+                                        download>download</a>
+                            </audio>
+                        </div>
+    
+                    </div>
+
+                    <div class='song-title-name'>
+                            two-bears-extended.mp3
+                        </div>
+                        <!-- ==== HEADERWRAP ==== -->
+                        <div class='four-thousand-controls'>
+                            <audio controls>
+                                <source src="../assets/two-bears/two-bears-theme-take_4-faded.mp3"
+                                    type="audio/mp3">
+                                <source src="../assets/two-bears/two-bears-theme-take_4-faded.ogg"
+                                    type="audio/ogg">
+                                <!-- fallback for non supporting browsers goes here -->
+                                <p>Your browser does not support HTML5 audio, but you can still
+                                    <a href="../assets/two-bears/two-bears-theme-take_4-faded.ogg"
+                                        download>download</a>
+                            </audio>
+                        </div>
+    
+    
+            </div>
+
+                <div class="card-body">
+                    <h5 class="card-title">two-bears-mixed</h5>
+                    <p class="card-text">08.13.19</p>
+                    <audio controls>
+                        <source src="../assets/two-bears/two-bears-theme-1176_fairchild_660-16db-take_4.mp3"
+                            type="audio/mp3">
+                        <source src="../assets/two-bears/two-bears-theme-1176_fairchild_660-16db-take_4.ogg"
+                            type="audio/ogg">
+                        <!-- fallback for non supporting browsers goes here -->
+                        <p>Your browser does not support HTML5 audio, but you can still
+                            <a href="../assets/two-bears/two-bears-theme-1176_fairchild_660-16db-take_4.ogg"
+                                download>download</a>
+                    </audio>
                 </div>
-
-         
-        </div>
-    </div>
-
-
-    <div class="container info-footer">
+                
+            </div>
             <div class='album-release'>
 
                     <a class="icon icon-twitter" href="https://twitter.com/talkhyper"></a> |
@@ -131,10 +179,14 @@
     
     
                 </div>
+
+        </div>
+
     </div>
 
+
     <!-- Bootstrap core JavaScript
-        ================================================== -->
+    ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -152,7 +204,6 @@
     <!-- <script type="text/javascript" src="assets/js/jquery-func.js"></script> -->
 </body>
 
-
-
-
 </html>
+
+
